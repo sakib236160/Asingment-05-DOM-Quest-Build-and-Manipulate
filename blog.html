@@ -63,23 +63,29 @@
             </h1>
             <div class="collapse collapse-arrow join-item border border-base-300">
                 <input type="radio" name="my-accordion-4" checked="checked" />
-                <div class="collapse-title text-lg md:text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-lg md:text-xl font-medium">Q1: How does JavaScript handle dynamic content insertion in the DOM?
+                </div>
                 <div class="collapse-content">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae illum est, earum recusandae quasi repellendus nam beatae deleniti adipisci?</p>
+                    <p>Answer:JavaScript enables dynamic content insertion in the DOM through methods such as createElement, appendChild, and insertBefore. When you need to add new elements, such as a list item or a button, you can create an element using createElement, set its attributes or content, and then insert it into the DOM tree using methods like appendChild. This allows you to dynamically modify the structure of a webpage based on user interaction or data changes, without needing to reload the entire page.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow join-item border border-base-300">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-lg md:text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-lg md:text-xl font-medium">Q2: What is the difference between querySelector and querySelectorAll in the DOM?
+                </div>
                 <div class="collapse-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt earum odit nostrum quidem tempore quo iusto adipisci perferendis aliquid necessitatibus dolorem iure nobis labore voluptate voluptatem, modi nulla consequuntur? Debitis nisi voluptatum deleniti voluptate incidunt in consequatur praesentium, tenetur magnam, dolorem porro perferendis ad recusandae a. Quia sed quam unde.</p>
+                    <p>Both querySelector and querySelectorAll are used to select elements in the DOM using CSS selectors, but they differ in their return values. querySelector returns the first matching element it finds, making it ideal for cases where you only need one element, like selecting a single button or input field. In contrast, querySelectorAll returns a NodeList of all matching elements, even if multiple elements match the selector. This makes querySelectorAll useful when working with lists of elements, such as selecting all the items in a menu or every paragraph on a page.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow join-item border border-base-300">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-lg md:text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-lg md:text-xl font-medium">Q3: How does JavaScript handle event propagation and what is the difference between capturing and bubbling?
+                </div>
                 <div class="collapse-content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis dolore recusandae nemo maiores aliquid nisi officiis magni vero amet! Dolorem omnis minus esse accusamus facilis aliquid placeat mollitia quidem, voluptates officiis enim ducimus! Temporibus, quasi quas? Voluptate ab deserunt rerum necessitatibus minima optio repellendus, sint eos iste saepe nemo doloremque.</p>
+                    <p>Event propagation in JavaScript refers to the way events are handled in the DOM hierarchy, specifically in the phases of capturing, target, and bubbling. In the capturing phase, events are first captured by the outermost elements and then propagate inward. In the bubbling phase, events start at the target element and bubble outward to the root. By default, most events use bubbling, but event listeners can be set to capture events instead by using the capture option in addEventListener. Understanding these phases allows developers to control the flow of events, such as preventing default actions or handling events in a more granular way.
+                    </p>
                 </div>
             </div>
         </div>
