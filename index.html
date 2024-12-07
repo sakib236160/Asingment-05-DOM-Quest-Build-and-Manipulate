@@ -34,28 +34,28 @@
 <body class="bg-gray-50  ">
    <section class="">
      <!-- Sticky Navbar -->
-    <nav class="  mt-0 navbar bg-secondary sticky top-0 z-50 px-6 py-4 flex items-center">
+    <nav class="navbar bg-secondary sticky top-0 z-50 px-6  flex items-center justify-between">
         <!-- Left Section: Blog Button -->
         <div class="flex-1">
           <a href="blog.html" class="btn btn-ghost bg-primary normal-case text-lg text-black font-bold">Blog</a>
         </div>
         <!-- Center Section: Donate Bangladesh -->
-        <div class="absolute left-1/2 transform -translate-x-1/2">
-          <div class="flex items-center gap-2">
-            <span class="text-xl"><img src="./img/icon.jpg" alt=""></span>
-            <span class="text-lg font-semibold">Donate Bangladesh</span>
-          </div>
+        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
+            <div class="flex items-center gap-2">
+                <img src="./img/logo.png" alt="Icon" class="w-6 h-6 md:w-8 md:h-8">
+                <span class="text-sm md:text-lg font-semibold">Donate Bangladesh</span>
+            </div>
         </div>
         <!-- Right Section: Donation Amount -->
         <div class="flex-none">
           <div class="flex items-center gap-1">
-            <span>💰</span>
+            <span><img src="./img/coin.png" alt=""></span>
             <span  class="text-lg font-semibold text-black"><span id="donation-amount">9000</span> BDT</span>
           </div>
         </div>
       </nav>
     <!-- Sticky Donation Buttons -->
-    <div class="sticky top-20 z-40 bg-gray-50 py-4 mb-10 ">
+    <div class="sticky top-16 z-40 bg-gray-50 py-4 mb-10 ">
       <div class="mt-2 flex justify-center gap-4">
         <button id="donation-tab" class="btn bg-primary font-bold">Donation</button>
         <button id="history-tab" class="btn font-bold">History</button>
@@ -96,7 +96,7 @@
                         <div class="w-2/3">
                             <div>
                                 <button class="btn font-bold mb-10">
-                                    <span>💰</span>
+                                    <span><img src="./img/coin.png" alt=""></span>
                                     <span id="donation-coin-1">600</span>BDT
                                 </button>
                             </div>
@@ -141,7 +141,7 @@
                         <div class="w-2/3">
                             <div>
                                 <button class="btn font-bold mb-10">
-                                    <span>💰</span>
+                                    <span><img src="./img/coin.png" alt=""></span>
                                     <span id="donation-coin-2">600</span>BDT
                                 </button>
                             </div>
@@ -188,7 +188,7 @@
                         <div class="w-2/3">
                             <div>
                                 <button class="btn font-bold mb-10">
-                                    <span>💰</span>
+                                    <span><img src="./img/coin.png" alt=""></span>
                                     <span id="donation-coin-3">600</span>BDT
                                 </button>
                             </div>
