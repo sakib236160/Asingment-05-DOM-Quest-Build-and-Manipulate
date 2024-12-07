@@ -82,142 +82,150 @@
     
          <div id="card-section-all">
             <!--1 Donation Card Section -->
-                <section  class=" ml-16 mr-16 mb-5 ">
-                    <div class="bg-white p-6 rounded-lg flex items-center border gap-10">
-                        <!-- Left Side Image -->
-                        <div class="w-2/3">
+            <section class="mb-5 mx-4 md:mx-16">
+                <div class="bg-white p-4 md:p-6 rounded-lg flex flex-col md:flex-row items-center border gap-6 md:gap-10">
+                  <!-- Left Side Image -->
+                  <div class="w-full md:w-1/2">
+                    <img 
+                      src="./img/01.png" 
+                      alt="Flood Relief" 
+                      class="w-full h-auto rounded-md"
+                    />
+                  </div>
+                  
+                  <!-- Right Side Content -->
+                  <div class="w-full md:w-1/2">
+                    <div>
+                      <button class="btn font-bold mb-6">
+                        <span><img src="./img/coin.png" alt="Coin Icon" class="inline-block w-5 h-5 mr-2" /></span>
+                        <span id="donation-coin-1">600</span> BDT
+                      </button>
+                    </div>
+                    
+                    <!-- Donation Title -->
+                    <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-6">
+                      <span id="h2-card1">Donate for Flood at Noakhali, Bangladesh</span>
+                    </h2>
+                    
+                    <!-- Description -->
+                    <p class="text-sm md:text-base text-gray-600 mb-6">
+                      The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Together, we can offer crucial support and help rebuild lives. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    
+                    <!-- Donation Input -->
+                    <div class="mb-4">
+                      <input id="donation-input-1"  
+                        placeholder="Write Donation Amount" 
+                        class="input input-bordered  w-full px-4 py-2"
+                      />
+                    </div>
+                    
+                    <!-- Donate Button -->
+                    <button id="DonateButton1" onclick="handleDonation(1)"
+                      class="btn bg-primary w-full font-semibold py-2">
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+            </section>  
+            <!--2 Donation Card Section -->
+            <section class="mb-5 mx-4 md:mx-16">
+                    <div class="bg-white p-4 md:p-6 rounded-lg flex flex-col md:flex-row items-center border gap-6 md:gap-10">
+                      <!-- Left Side Image -->
+                      <div class="w-full md:w-1/2">
                         <img 
-                            src="./img/01.png" 
-                            alt="Flood Relief" 
-                            class="w-full h-auto rounded-md"
+                          src="./img/01.png" 
+                          alt="Flood Relief" 
+                          class="w-full h-auto rounded-md"
                         />
+                      </div>
+                      
+                      <!-- Right Side Content -->
+                      <div class="w-full md:w-1/2">
+                        <div>
+                          <button class="btn font-bold mb-6">
+                            <span><img src="./img/coin.png" alt=""></span>
+                            <span id="donation-coin-2">600</span> BDT
+                          </button>
                         </div>
-                        <!-- Right Side Content -->
-                        <div class="w-2/3">
-                            <div>
-                                <button class="btn font-bold mb-10">
-                                    <span><img src="./img/coin.png" alt=""></span>
-                                    <span id="donation-coin-1">600</span>BDT
-                                </button>
-                            </div>
+                        
                         <!-- Donation Title -->
-                        <h2 class="text-xl font-semibold text-gray-800 mb-10">
-                            <span id="h2-card1">Donate for Flood at Noakhali, Bangladesh</span>
+                        <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-6">
+                          <span id="h2-card2">Donate for Flood at Noakhali, Bangladesh</span>
                         </h2>
-                    
+                        
                         <!-- Description -->
-                        <p class="text-sm text-gray-600 mb-10">
-                            The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference.Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                        <p class="text-sm md:text-base text-gray-600 mb-6">
+                          The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                         </p>
-                    
+                        
                         <!-- Donation Input -->
                         <div class="mb-4">
-                            <input id="donation-input-1"  
+                          <input id="donation-input-2"  
                             placeholder="Write Donation Amount" 
-                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                            />
-                        </div>
-                    
+                            class="input input-bordered w-full px-4 py-2"
+                          />
+                        </div>                     
                         <!-- Donate Button -->
-                        <button id="DonateButton1" onclick="handleDonation(1)"
-                            class="w-full bg-primary text-black font-semibold py-2 rounded-md hover:bg-gray-200 transition-colors">
-                            Donate Now
+                        <button id="DonateButton2" onclick="handleDonation(2)"
+                          class="btn bg-primary w-full font-semibold py-2">
+                          Donate Now
                         </button>
-                        </div>
+                      </div>
                     </div>
-                </section>
-                <!--2 Donation Card Section -->
-                <section  class=" ml-16 mr-16 mb-5 ">
-                    <div class="bg-white p-6 rounded-lg flex items-center border gap-10">
-                        <!-- Left Side Image -->
-                        <div class="w-2/3">
+            </section>
+                  
+            <!--3 Donation Card Section -->
+            <section class="mb-5 mx-4 md:mx-16">
+                    <div class="bg-white p-4 md:p-6 rounded-lg flex flex-col md:flex-row items-center border gap-6 md:gap-10">
+                      <!-- Left Side Image -->
+                      <div class="w-full md:w-1/2">
                         <img 
-                            src="./img/02.png" 
-                            alt="Flood Relief" 
-                            class="w-full h-auto rounded-md"
+                          src="./img/01.png" 
+                          alt="Flood Relief" 
+                          class="w-full h-auto rounded-md"
                         />
+                      </div>
+                  
+                      <!-- Right Side Content -->
+                      <div class="w-full md:w-1/2">
+                        <div>
+                          <button class="btn font-bold mb-6">
+                            <span><img src="./img/coin.png" alt=""></span>
+                            <span id="donation-coin-3">600</span> BDT
+                          </button>
                         </div>
-                        <!-- Right Side Content -->
-                        <div class="w-2/3">
-                            <div>
-                                <button class="btn font-bold mb-10">
-                                    <span><img src="./img/coin.png" alt=""></span>
-                                    <span id="donation-coin-2">600</span>BDT
-                                </button>
-                            </div>
+                  
                         <!-- Donation Title -->
-                        <h2 class="text-xl font-semibold text-gray-800 mb-10">
-                            <span id="h2-card2">Donate for Flood at Noakhali, Bangladesh</span>
+                        <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-6">
+                          <span id="h2-card3">Aid for Injured in the Quota Movement</span>
                         </h2>
-                    
+                  
                         <!-- Description -->
-                        <p class="text-sm text-gray-600 mb-10">
-                            The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference.Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                        <p class="text-sm md:text-base text-gray-600 mb-6">
+                          The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
                         </p>
-                    
+                  
                         <!-- Donation Input -->
                         <div class="mb-4">
-                            <input id="donation-input-2" 
+                          <input 
+                            id="donation-input-3"
                             placeholder="Write Donation Amount" 
-                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                            />
+                            class="input input-bordered w-full px-4 py-2"
+                          />
                         </div>
-                    
+                  
                         <!-- Donate Button -->
-                        <button  id="DonateButton2" onclick="handleDonation(2)"
-                            class="w-full bg-primary text-black font-semibold py-2 rounded-md hover:bg-gray-200 transition-colors">
-                            Donate Now
+                        <button 
+                          id="DonateButton3" 
+                          onclick="handleDonation(3)"
+                          class="btn bg-primary w-full font-semibold py-2"
+                        >
+                          Donate Now
                         </button>
-                        </div>
+                      </div>
                     </div>
-
-
-                </section >
-                <!--3 Donation Card Section -->
-                <section class=" ml-16 mr-16 mb-5 ">
-                    <div class="bg-white p-6 rounded-lg flex items-center border gap-10">
-                        <!-- Left Side Image -->
-                        <div class="w-2/3">
-                        <img 
-                            src="./img/03.png" 
-                            alt="Flood Relief" 
-                            class="w-full h-auto rounded-md"
-                        />
-                        </div>
-                        <!-- Right Side Content -->
-                        <div class="w-2/3">
-                            <div>
-                                <button class="btn font-bold mb-10">
-                                    <span><img src="./img/coin.png" alt=""></span>
-                                    <span id="donation-coin-3">600</span>BDT
-                                </button>
-                            </div>
-                        <!-- Donation Title -->
-                        <h2 class="text-xl font-semibold text-gray-800 mb-10">
-                            <span id="h2-card3">Aid for Injured in the Quota Movement</span>
-                        </h2>
-                    
-                        <!-- Description -->
-                        <p class="text-sm text-gray-600 mb-10">
-                            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
-                        </p>
-                    
-                        <!-- Donation Input -->
-                        <div class="mb-4">
-                            <input id="donation-input-3" 
-                            placeholder="Write Donation Amount" 
-                            class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                            />
-                        </div>
-                    
-                        <!-- Donate Button -->
-                        <button  id="DonateButton3" onclick="handleDonation(3)"
-                            class="w-full bg-primary text-black font-semibold py-2 rounded-md hover:bg-gray-200 transition-colors">
-                            Donate Now
-                        </button>
-                        </div>
-                    </div>
-                </section>
+            </section>
         </div>          
    </section>
 
