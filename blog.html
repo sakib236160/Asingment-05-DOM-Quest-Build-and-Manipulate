@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!------------------------------- Font-Awesome Link ---------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------------------------------- Google Font ---------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-----------------------------------Daisy UI and Tailwind CSS Link-------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!----------------------------------- Tailwind CSS Configuration ---------------------------------->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B4F461',
+                secondary: '#F9F7F3',
+                background: '#FFFFFF',
+              },
+              fontFamily: {
+                Lexend: 'Lexend',
+              },
+            },
+          },
+        };
+    </script>
+</head>
+<body class="bg-gray-50">
+    <section>
+        <!-- Sticky Navbar -->
+        <nav class="navbar bg-secondary sticky top-0 z-50 px-4 md:px-6 py-3 flex items-center justify-between">
+            <!-- Left Section: Blog Button -->
+            <div class="flex-1">
+                <a href="index.html" class="btn btn-ghost bg-primary normal-case text-base md:text-lg text-black font-bold">Home</a>
+            </div>
+            <!-- Center Section: Donate Bangladesh -->
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
+                <div class="flex items-center gap-2">
+                    <img src="./img/icon.jpg" alt="Icon" class="w-6 h-6 md:w-8 md:h-8">
+                    <span class="text-sm md:text-lg font-semibold">Donate Bangladesh</span>
+                </div>
+            </div>
+            <!-- Right Section: Donation Amount -->
+            <div class="flex items-center gap-2 md:gap-1">
+                <span>💰</span>
+                <span class="text-sm md:text-lg font-semibold text-black"><span id="donation-amount">9000</span> BDT</span>
+            </div>
+        </nav>
+
+        <!-- Accordion Section -->
+        <div class="join join-vertical w-full max-w-screen-md mx-auto px-4 md:px-0">
+            <div class="collapse collapse-arrow join-item border border-base-300">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-lg md:text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint vitae illum est, earum recusandae quasi repellendus nam beatae deleniti adipisci?</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-base-300">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-lg md:text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt earum odit nostrum quidem tempore quo iusto adipisci perferendis aliquid necessitatibus dolorem iure nobis labore voluptate voluptatem, modi nulla consequuntur? Debitis nisi voluptatum deleniti voluptate incidunt in consequatur praesentium, tenetur magnam, dolorem porro perferendis ad recusandae a. Quia sed quam unde.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-base-300">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-lg md:text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis dolore recusandae nemo maiores aliquid nisi officiis magni vero amet! Dolorem omnis minus esse accusamus facilis aliquid placeat mollitia quidem, voluptates officiis enim ducimus! Temporibus, quasi quas? Voluptate ab deserunt rerum necessitatibus minima optio repellendus, sint eos iste saepe nemo doloremque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>
