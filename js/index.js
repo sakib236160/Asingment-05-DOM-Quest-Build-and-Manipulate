@@ -7,16 +7,6 @@ function handleDonation(cardIndex) {
     const donationCoinValue = parseFloat(donationCoin.innerText) || 0;
     const donationAmountValue = parseFloat(donationAmount.innerText) || 0;
 
-    // if (donationInputValue <= 0 || isNaN(donationInputValue)) {
-    //     alert(`Card ${cardIndex}: Please enter a valid donation amount greater than 0.`);
-    //     donationInput.value = ''; 
-    //     return;
-    // } else if (donationInputValue > donationAmountValue) {
-    //     alert(`Card ${cardIndex}: Donation amount cannot exceed ${donationAmountValue} BDT.`);
-    //     donationInput.value = '';
-    //     return;
-    // }
-    // Validation logic
 if (
     donationInputValue <= 0 || 
     isNaN(donationInputValue) || 
