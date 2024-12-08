@@ -29,7 +29,7 @@ function handleDonation(cardIndex) {
     const historyItem = document.createElement('div');
     historyItem.className = 'card bg-base-100 mx-10 my-0';
     historyItem.innerHTML = `
-        <div class="card-body">
+        <div class="card-body border rounded-lg mb-5">
             <h2 class="card-title font-bold">
               ${donationInputValue} Taka is Donated for: ${dynamicText}
             </h2>

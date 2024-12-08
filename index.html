@@ -56,7 +56,7 @@
       </nav>
       
     <!-- Sticky Donation Buttons -->
-    <div class="sticky top-16 z-40 bg-gray-50 py-4 mb-10 ">
+    <div class="sticky top-16 z-40 backdrop-blur-md py-4 mb-10 ">
       <div class="mt-2 flex justify-center gap-4">
         <button id="donation-tab" class="btn bg-primary font-bold">Donation</button>
         <button id="history-tab" class="btn font-bold">History</button>
@@ -64,18 +64,20 @@
     </div>
 
     <!-- Modal Structure -->
-    <div>
-      <div id="modelOpen" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
+      <div id="modelOpen" class="hidden fixed inset-0 flex justify-center items-center">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 class="text-3xl text-center font-bold text-gray-800 mb-4">Congrates!</h2>
             <img class="mx-auto block mb-5" src="./img/coin.png" alt="">
             <p id="modal-message"  class="text-gray-300 hidden"></p>
             <p class="text-lg text-center text-gray-500 mb-4">You Have Donated for Humankind</p>
             <p class="text-1xl text-center font-bold text-gray-800 mb-4">Successfully</p>
-            <button id="closeModal" class=" flex justify-center items-center bg-gray-50 text-gray-500 px-4 py-2 rounded">Close confirmation</button>
+            <div class="flex justify-center items-center">
+              <button id="closeModal" class="  bg-gray-50 text-gray-500 px-4 py-2 rounded">Close confirmation
+              </button>
+            </div>
         </div>
     </div>
-    </div>
+
 
     <!-- history part -->
     <div class="container mx-auto my-8">
@@ -121,7 +123,7 @@
                     <div class="mb-4">
                       <input id="donation-input-1"  
                         placeholder="Write Donation Amount" 
-                        class="input input-bordered  w-full px-4 py-2"
+                        class="input input-bordered w-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"
                       />
                     </div>
                     
@@ -156,19 +158,19 @@
                         
                         <!-- Donation Title -->
                         <h2 class="text-lg md:text-xl font-semibold text-gray-800 mb-6">
-                          <span id="h2-card2">Donate for Flood at Noakhali, Bangladesh</span>
+                          <span id="h2-card2">Join Hands to Rebuild Noakhali Flood Relief Appeal</span>
                         </h2>
                         
                         <!-- Description -->
                         <p class="text-sm md:text-base text-gray-600 mb-6">
-                          The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                          The recent floods in Noakhali have caused widespread devastation, destroying homes and infrastructure. In the face of this disaster, your generous donation can help provide essential and support to those affected.Every contribution whether big or small makes a significant difference. Together, we can help rebuild lives, restore hope, and offer assistance needed for recovery.Please join us in supporting this cause. Your compassion and support can create a lasting impact on the lives of those in need.
                         </p>
                         
                         <!-- Donation Input -->
                         <div class="mb-4">
                           <input id="donation-input-2"  
                             placeholder="Write Donation Amount" 
-                            class="input input-bordered w-full px-4 py-2"
+                            class="input input-bordered w-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"
                           />
                         </div>                     
                         <!-- Donate Button -->
@@ -216,7 +218,7 @@
                           <input 
                             id="donation-input-3"
                             placeholder="Write Donation Amount" 
-                            class="input input-bordered w-full px-4 py-2"
+                            class="input input-bordered w-full px-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary"
                           />
                         </div>
                   
